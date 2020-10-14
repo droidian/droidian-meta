@@ -1,0 +1,99 @@
+Source: hybris-mobian-meta
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Section: metapackages
+Priority: optional
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.5.0.3
+Vcs-Browser: https://github.com/hybris-mobian/hybris-mobian-meta
+Vcs-Git: https://github.com/hybris-mobian-releng/hybris-mobian-meta.git
+
+Package: hybris-mobian-base
+Architecture: all
+Depends: ${misc:Depends},
+         mobian-base
+Description: hybris-mobian metapackages - base
+ This metapackage depends on a bunch of essential
+ packages for the hybris-mobian installation.
+
+Package: hybris-mobian-minimal
+Architecture: all
+Depends: ${misc:Depends},
+         hybris-mobian-base (= ${binary:Version}),
+         at-spi2-core,
+         flatpak,
+         gvfs-backends,
+         fonts-cantarell,
+         fonts-noto,
+         fonts-noto-cjk,
+         fonts-noto-color-emoji,
+         fonts-noto-mono,
+         fonts-noto-ui-core,
+         wayland-protocols,
+         xdg-desktop-portal-gtk,
+         xdg-user-dirs,
+         libcanberra-gtk3-module,
+         libpam-gnome-keyring,
+         feedbackd,
+         gnome-bluetooth,
+         gnome-control-center,
+         gnome-initial-setup,
+         gnome-online-accounts,
+         gnome-session,
+         gnome-settings-daemon,
+         gnome-themes-extra-data,
+         mobian-tweaks,
+         network-manager-gnome,
+         phoc,
+         phosh,
+         phosh-mobile-tweaks,
+         squeekboard,
+Description: hybris-mobian metapackages - minimal phosh environment  
+ This metapackage depends on a bunch of essential
+ packages for the hybris-mobian installation with
+ the phosh mobile shell.
+
+Package: hybris-mobian-phone
+Architecture: all
+Depends: ${misc:Depends},
+         hybris-mobian-minimal (= ${binary:Version}),
+         calls,
+         chatty,
+Description: hybris-mobian metapackages - addons for mobile phones
+ This metapackage depends on a bunch of packages that
+ make phone-related stuff work.
+
+Package: hybris-mobian-full
+Architecture: all
+Depends: ${misc:Depends},
+         hybris-mobian-minimal (= ${binary:Version}),
+         evince,
+         geary,
+         file-roller,
+         gedit,
+         gnome-calculator,
+         gnome-calendar,
+         gnome-contacts,
+         gnome-clocks,
+         gnome-maps,
+         gnome-software,
+         gnome-software-plugin-flatpak,
+         gnome-usage,
+         gnome-weather,
+         nemo,
+         nemo-fileroller,
+         epiphany-browser,
+         pinhole,
+Description: hybris-mobian metapackages - full phosh environment
+ This metapackage depends on a bunch of packages that make
+ the phosh mobile shell more complete.
+
+Package: hybris-mobian-devtools
+Architecture: all
+Depends: ${misc:Depends},
+         openssh-server,
+         pciutils,
+         git,
+Description: hybris-mobian metapackages - devtools
+ This metapackage depends on a bunch of packages that
+ aid development.
+
