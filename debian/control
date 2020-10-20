@@ -58,6 +58,7 @@ Depends: ${misc:Depends},
          hybris-mobian-minimal (= ${binary:Version}),
          calls,
          chatty,
+         mobile-broadband-provider-info,
 Description: hybris-mobian metapackages - addons for mobile phones
  This metapackage depends on a bunch of packages that
  make phone-related stuff work.
