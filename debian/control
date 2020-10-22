@@ -84,6 +84,7 @@ Depends: ${misc:Depends},
          nemo-fileroller,
          epiphany-browser,
          pinhole,
+         gthd,
 Description: hybris-mobian metapackages - full phosh environment
  This metapackage depends on a bunch of packages that make
  the phosh mobile shell more complete.
