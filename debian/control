@@ -83,7 +83,7 @@ Depends: ${misc:Depends},
          nemo,
          nemo-fileroller,
          epiphany-browser,
-         pinhole,
+         cheese,
          gthd,
 Description: hybris-mobian metapackages - full phosh environment
  This metapackage depends on a bunch of packages that make
