@@ -56,7 +56,7 @@ Package: hybris-mobian-phone
 Architecture: all
 Depends: ${misc:Depends},
          hybris-mobian-minimal (= ${binary:Version}),
-         calls,
+         gnome-calls,
          chatty,
          mobile-broadband-provider-info,
          device-chassis-handset,
