@@ -86,6 +86,8 @@ Depends: ${misc:Depends},
          epiphany-browser,
          cheese,
          gthd,
+         firefox-esr,
+         firefox-esr-mobile-config,
 Description: hybris-mobian metapackages - full phosh environment
  This metapackage depends on a bunch of packages that make
  the phosh mobile shell more complete.
