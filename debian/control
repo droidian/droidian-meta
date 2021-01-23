@@ -47,6 +47,7 @@ Depends: ${misc:Depends},
          phosh,
          phosh-mobile-tweaks,
          squeekboard,
+         cpufrequtils,
 Description: hybris-mobian metapackages - minimal phosh environment  
  This metapackage depends on a bunch of essential
  packages for the hybris-mobian installation with
