@@ -1,24 +1,26 @@
-Source: hybris-mobian-meta
-Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Source: droidian-meta
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
 Section: metapackages
 Priority: optional
 Build-Depends: debhelper (>= 10)
 Standards-Version: 4.5.0.3
-Vcs-Browser: https://github.com/hybris-mobian/hybris-mobian-meta
-Vcs-Git: https://github.com/hybris-mobian-releng/hybris-mobian-meta.git
+Vcs-Browser: https://github.com/droidian/droidian-meta
+Vcs-Git: https://github.com/droidian/droidian-meta.git
 
-Package: hybris-mobian-base
+Package: droidian-base
 Architecture: all
 Depends: ${misc:Depends},
          mobian-base
-Description: hybris-mobian metapackages - base
+Breaks: hybris-mobian-base (<< 8+git20210325000000)
+Replaces: hybris-mobian-base (<< 8+git20210325000000)
+Description: Droidian metapackages - base
  This metapackage depends on a bunch of essential
- packages for the hybris-mobian installation.
+ packages for the Droidian installation.
 
-Package: hybris-mobian-minimal
+Package: droidian-minimal
 Architecture: all
 Depends: ${misc:Depends},
-         hybris-mobian-base (= ${binary:Version}),
+         droidian-base (= ${binary:Version}),
          at-spi2-core,
          flatpak,
          gvfs-backends,
@@ -49,27 +51,31 @@ Depends: ${misc:Depends},
          squeekboard,
          cpufrequtils,
          lm-sensors,
-Description: hybris-mobian metapackages - minimal phosh environment  
+Breaks: hybris-mobian-minimal (<< 8+git20210325000000)
+Replaces: hybris-mobian-minimal (<< 8+git20210325000000)
+Description: Droidian metapackages - minimal phosh environment
  This metapackage depends on a bunch of essential
- packages for the hybris-mobian installation with
+ packages for the droidian installation with
  the phosh mobile shell.
 
-Package: hybris-mobian-phone
+Package: droidian-phone
 Architecture: all
 Depends: ${misc:Depends},
-         hybris-mobian-minimal (= ${binary:Version}),
+         droidian-minimal (= ${binary:Version}),
          gnome-calls,
          chatty,
          mobile-broadband-provider-info,
          device-chassis-handset,
-Description: hybris-mobian metapackages - addons for mobile phones
+Breaks: hybris-mobian-phone (<< 8+git20210325000000)
+Replaces: hybris-mobian-phone (<< 8+git20210325000000)
+Description: Droidian metapackages - addons for mobile phones
  This metapackage depends on a bunch of packages that
  make phone-related stuff work.
 
-Package: hybris-mobian-full
+Package: droidian-full
 Architecture: all
 Depends: ${misc:Depends},
-         hybris-mobian-minimal (= ${binary:Version}),
+         droidian-minimal (= ${binary:Version}),
          evince,
          geary,
          file-roller,
@@ -90,17 +96,55 @@ Depends: ${misc:Depends},
          gthd,
          firefox-esr,
          firefox-esr-mobile-config,
-Description: hybris-mobian metapackages - full phosh environment
+Breaks: hybris-mobian-full (<< 8+git20210325000000)
+Replaces: hybris-mobian-full (<< 8+git20210325000000)
+Description: Droidian metapackages - full phosh environment
  This metapackage depends on a bunch of packages that make
  the phosh mobile shell more complete.
 
-Package: hybris-mobian-devtools
+Package: droidian-devtools
 Architecture: all
 Depends: ${misc:Depends},
          openssh-server,
          pciutils,
          git,
-Description: hybris-mobian metapackages - devtools
+Breaks: hybris-mobian-devtools (<< 8+git20210325000000)
+Replaces: hybris-mobian-devtools (<< 8+git20210325000000)
+Description: Droidian metapackages - devtools
  This metapackage depends on a bunch of packages that
  aid development.
 
+Package: hybris-mobian-base
+Architecture: all
+Depends: droidian-base
+Description: Droidian metapackages - base -- transitional package
+ This package is a transitional package. Feel free to
+ remove it.
+
+Package: hybris-mobian-minimal
+Architecture: all
+Depends: droidian-minimal
+Description: Droidian metapackages - minimal phosh environment -- transitional package
+ This package is a transitional package. Feel free to
+ remove it.
+
+Package: hybris-mobian-phone
+Architecture: all
+Depends: droidian-phone
+Description: Droidian metapackages - addons for mobile phones -- transitional package
+ This package is a transitional package. Feel free to
+ remove it.
+
+Package: hybris-mobian-full
+Architecture: all
+Depends: droidian-full
+Description: Droidian metapackages - full phosh environment -- transitional package
+ This package is a transitional package. Feel free to
+ remove it.
+
+Package: hybris-mobian-devtools
+Architecture: all
+Depends: droidian-devtools
+Description: Droidian metapackages - devtools -- transitional package
+ This package is a transitional package. Feel free to
+ remove it.

@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: hybris-mobian-meta
-Source: https://github.com/hybris-mobian/hybris-mobian-meta
+Upstream-Name: droidian-meta
+Source: https://github.com/droidian/droidian-meta
 
 Files: *
 Copyright: 2020 Eugenio "g7" Paolantonio <me@medesimo.eu>
