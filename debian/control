@@ -10,7 +10,8 @@ Vcs-Git: https://github.com/droidian/droidian-meta.git
 Package: droidian-base
 Architecture: all
 Depends: ${misc:Depends},
-         mobian-base
+         mobian-base,
+         droidian-quirks-journald-standard | droidian-quirks-journald-development,
 Breaks: hybris-mobian-base (<< 8+git20210325000000)
 Replaces: hybris-mobian-base (<< 8+git20210325000000)
 Description: Droidian metapackages - base
@@ -113,6 +114,7 @@ Depends: ${misc:Depends},
          isc-dhcp-client,
          strace,
          systemd-coredump,
+         droidian-quirks-journald-development,
 Breaks: hybris-mobian-devtools (<< 8+git20210325000000)
 Replaces: hybris-mobian-devtools (<< 8+git20210325000000)
 Description: Droidian metapackages - devtools
