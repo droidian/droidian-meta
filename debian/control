@@ -67,6 +67,7 @@ Depends: ${misc:Depends},
          chatty,
          mobile-broadband-provider-info,
          device-chassis-handset,
+	 ofono2mm,
 Breaks: hybris-mobian-phone (<< 8+git20210325000000)
 Replaces: hybris-mobian-phone (<< 8+git20210325000000)
 Description: Droidian metapackages - addons for mobile phones
