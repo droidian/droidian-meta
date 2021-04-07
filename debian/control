@@ -135,6 +135,7 @@ Depends: ${misc:Depends},
          isc-dhcp-client,
          strace,
          systemd-coredump,
+         aptitude,
          droidian-quirks-journald-development,
 Breaks: hybris-mobian-devtools (<< 8+git20210325000000)
 Replaces: hybris-mobian-devtools (<< 8+git20210325000000)
