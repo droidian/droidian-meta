@@ -47,6 +47,7 @@ Depends: ${misc:Depends},
          wireless-tools,
          wpasupplicant,
          droidian-quirks-journald-standard | droidian-quirks-journald-development,
+         droidian-branding,
 Breaks: hybris-mobian-base (<< 8+git20210325000000)
 Replaces: hybris-mobian-base (<< 8+git20210325000000)
 Description: Droidian metapackages - base
