@@ -70,6 +70,7 @@ Depends: ${misc:Depends},
          xdg-user-dirs,
          libcanberra-gtk3-module,
          phosh-core,
+         droidian-no-qt | droidian-qt,
          gnome-initial-setup,
          gnome-themes-extra-data,
          network-manager-gnome,
@@ -142,6 +143,40 @@ Replaces: hybris-mobian-devtools (<< 8+git20210325000000)
 Description: Droidian metapackages - devtools
  This metapackage depends on a bunch of packages that
  aid development.
+
+Package: droidian-no-qt
+Architecture: all
+Conflicts: libqt5gui5,
+           libqt5quick5,
+           libqt5gui5-gles,
+           libqt5quick5-gles,
+           droidian-qt
+Replaces: droidian-qt
+Description: Workaround to pull Qt Wayland QPA dynamically - no-qt package
+ Droidian is currently a mostly-GTK+ distro, so we try to avoid
+ foreign dependencies if not strictly needed.
+ This has the side effect that, when Qt applications are installed, no
+ working backend is put in place (since applications don't depend on any),
+ resulting in a worsened end-user experience.
+ .
+ This package works around this by getting installed by default on image
+ creation (due to how APT works), and will be automatically replaced
+ by droidian-qt whenever an end-user wants to install a Qt application.
+
+Package: droidian-qt
+Architecture: all
+Depends: qtwayland5
+Conflicts: droidian-no-qt
+Replaces: droidian-no-qt
+Description: Workaround to pull Qt Wayland QPA dynamically - qt package
+ Droidian is currently a mostly-GTK+ distro, so we try to avoid
+ foreign dependencies if not strictly needed.
+ This has the side effect that, when Qt applications are installed, no
+ working backend is put in place (since applications don't depend on any),
+ resulting in a worsened end-user experience.
+ .
+ This package works around this by getting pulled automatically whenever
+ an end-user wants to install a Qt application.
 
 Package: hybris-mobian-base
 Architecture: all
