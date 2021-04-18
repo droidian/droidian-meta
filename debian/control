@@ -70,6 +70,7 @@ Depends: ${misc:Depends},
          network-manager-gnome,
          cpufrequtils,
          lm-sensors,
+         droidian-quirks-squeekboard,
 Breaks: hybris-mobian-minimal (<< 8+git20210325000000)
 Replaces: hybris-mobian-minimal (<< 8+git20210325000000)
 Description: Droidian metapackages - minimal phosh environment
