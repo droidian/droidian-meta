@@ -49,8 +49,6 @@ Depends: ${misc:Depends},
          droidian-apt-config,
          droidian-archive-keyring,
          mobian-archive-keyring,
-Breaks: hybris-mobian-base (<< 8+git20210325000000)
-Replaces: hybris-mobian-base (<< 8+git20210325000000)
 Description: Droidian metapackages - base
  This metapackage depends on a bunch of essential
  packages for the Droidian installation.
@@ -145,43 +143,6 @@ Depends: ${misc:Depends},
          psmisc,
          psutils,
          inxi,
-Breaks: hybris-mobian-devtools (<< 8+git20210325000000)
-Replaces: hybris-mobian-devtools (<< 8+git20210325000000)
 Description: Droidian metapackages - devtools
  This metapackage depends on a bunch of packages that
  aid development.
-
-Package: hybris-mobian-base
-Architecture: all
-Depends: droidian-base
-Description: Droidian metapackages - base -- transitional package
- This package is a transitional package. Feel free to
- remove it.
-
-Package: hybris-mobian-minimal
-Architecture: all
-Depends: droidian-minimal
-Description: Droidian metapackages - minimal phosh environment -- transitional package
- This package is a transitional package. Feel free to
- remove it.
-
-Package: hybris-mobian-phone
-Architecture: all
-Depends: droidian-phone
-Description: Droidian metapackages - addons for mobile phones -- transitional package
- This package is a transitional package. Feel free to
- remove it.
-
-Package: hybris-mobian-full
-Architecture: all
-Depends: droidian-full
-Description: Droidian metapackages - full phosh environment -- transitional package
- This package is a transitional package. Feel free to
- remove it.
-
-Package: hybris-mobian-devtools
-Architecture: all
-Depends: droidian-devtools
-Description: Droidian metapackages - devtools -- transitional package
- This package is a transitional package. Feel free to
- remove it.
