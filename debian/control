@@ -45,7 +45,6 @@ Depends: ${misc:Depends},
          wpasupplicant,
          droidian-quirks-journald-standard | droidian-quirks-journald-development,
          droidian-branding,
-         droidian-phosh-default-settings,
          droidian-apt-config,
          droidian-archive-keyring,
          mobian-archive-keyring,
@@ -53,10 +52,11 @@ Description: Droidian metapackages - base
  This metapackage depends on a bunch of essential
  packages for the Droidian installation.
 
-Package: droidian-minimal
+Package: droidian-phosh-minimal
 Architecture: all
 Depends: ${misc:Depends},
          droidian-base (= ${binary:Version}),
+         droidian-phosh-default-settings,
          at-spi2-core,
          flatpak,
          fonts-noto,
@@ -78,30 +78,30 @@ Depends: ${misc:Depends},
          lm-sensors,
          droidian-quirks-squeekboard,
          droidian-quirks-wayland,
-Breaks: hybris-mobian-minimal (<< 8+git20210325000000)
-Replaces: hybris-mobian-minimal (<< 8+git20210325000000)
+Breaks: droidian-minimal (<< 22+git20211206000000)
+Replaces: droidian-minimal (<< 22+git20211206000000)
 Description: Droidian metapackages - minimal phosh environment
  This metapackage depends on a bunch of essential
  packages for the droidian installation with
  the phosh mobile shell.
 
-Package: droidian-phone
+Package: droidian-phosh-phone
 Architecture: all
 Depends: ${misc:Depends},
-         droidian-minimal (= ${binary:Version}),
+         droidian-phosh-minimal (= ${binary:Version}),
          phosh-phone,
          mobile-broadband-provider-info,
          device-chassis-handset,
-Breaks: hybris-mobian-phone (<< 8+git20210325000000)
-Replaces: hybris-mobian-phone (<< 8+git20210325000000)
+Breaks: droidian-phone (<< 22+git20211206000000)
+Replaces: droidian-phone (<< 22+git20211206000000)
 Description: Droidian metapackages - addons for mobile phones
  This metapackage depends on a bunch of packages that
  make phone-related stuff work.
 
-Package: droidian-full
+Package: droidian-phosh-full
 Architecture: all
 Depends: ${misc:Depends},
-         droidian-minimal (= ${binary:Version}),
+         droidian-phosh-minimal (= ${binary:Version}),
          phosh-full,
          evince,
          geary,
@@ -121,8 +121,8 @@ Depends: ${misc:Depends},
          gthd,
          firefox-esr,
          firefox-esr-mobile-config,
-Breaks: hybris-mobian-full (<< 8+git20210325000000)
-Replaces: hybris-mobian-full (<< 8+git20210325000000)
+Breaks: droidian-full (<< 22+git20211206000000)
+Replaces: droidian-full (<< 22+git20211206000000)
 Description: Droidian metapackages - full phosh environment
  This metapackage depends on a bunch of packages that make
  the phosh mobile shell more complete.
@@ -146,3 +146,24 @@ Depends: ${misc:Depends},
 Description: Droidian metapackages - devtools
  This metapackage depends on a bunch of packages that
  aid development.
+
+Package: droidian-minimal
+Architecture: all
+Depends: droidian-phosh-minimal
+Description: Droidian metapackages - minimal phosh environment -- transitional package
+ This package is a transitional package. Feel free to
+ remove it.
+
+Package: droidian-phone
+Architecture: all
+Depends: droidian-phosh-phone
+Description: Droidian metapackages - addons for mobile phones -- transitional package
+ This package is a transitional package. Feel free to
+ remove it.
+
+Package: droidian-full
+Architecture: all
+Depends: droidian-phosh-full
+Description: Droidian metapackages - full phosh environment -- transitional package
+ This package is a transitional package. Feel free to
+ remove it.
