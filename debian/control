@@ -48,6 +48,7 @@ Depends: ${misc:Depends},
          droidian-apt-config,
          droidian-archive-keyring,
          mobian-archive-keyring,
+Conflicts: droidian-upgrade-bookworm
 Description: Droidian metapackages - base
  This metapackage depends on a bunch of essential
  packages for the Droidian installation.
