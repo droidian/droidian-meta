@@ -78,6 +78,7 @@ Depends: ${misc:Depends},
          lm-sensors,
          droidian-quirks-squeekboard,
          droidian-quirks-wayland,
+         droidian-quirks-initial-setup,
 Breaks: droidian-minimal (<< 22+git20211206000000)
 Replaces: droidian-minimal (<< 22+git20211206000000)
 Description: Droidian metapackages - minimal phosh environment
