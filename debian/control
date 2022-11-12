@@ -64,6 +64,7 @@ Architecture: all
 Depends: ${misc:Depends},
          droidian-base (= ${binary:Version}),
          droidian-phosh-default-settings,
+         chatty,
          at-spi2-core,
          flatpak,
          fonts-noto,
