@@ -115,6 +115,7 @@ Architecture: all
 Depends: ${misc:Depends},
          droidian-phosh-minimal (= ${binary:Version}),
          phosh-full,
+         phosh-tour,
          evince,
          geary,
          file-roller,
