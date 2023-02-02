@@ -133,6 +133,7 @@ Depends: ${misc:Depends},
          epiphany-browser,
          eog,
          gthd,
+         qtwayland5,
          firefox-esr,
 Breaks: droidian-full (<< 22+git20211206000000)
 Replaces: droidian-full (<< 22+git20211206000000)
