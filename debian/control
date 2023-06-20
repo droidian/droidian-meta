@@ -139,6 +139,7 @@ Depends: ${misc:Depends},
          firefox-esr-mobile-config,
          batman-gui,
          clapper,
+         droidian-quirks-totem-dummy,
 Breaks: droidian-full (<< 22+git20211206000000)
 Replaces: droidian-full (<< 22+git20211206000000)
 Description: Droidian metapackages - full phosh environment
