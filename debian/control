@@ -56,6 +56,9 @@ Depends: ${misc:Depends},
          droidian-archive-keyring,
          mobian-droidian-archive-keyring,
          batman,
+         nfcd,
+         nfcd-binder-plugin,
+         libgbinder-tools,
 Conflicts: droidian-upgrade-trixie
 Description: Droidian metapackages - base
  This metapackage depends on a bunch of essential
