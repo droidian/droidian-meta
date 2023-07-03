@@ -59,6 +59,7 @@ Depends: ${misc:Depends},
          nfcd,
          nfcd-binder-plugin,
          libgbinder-tools,
+         cups,
 Conflicts: droidian-upgrade-trixie
 Description: Droidian metapackages - base
  This metapackage depends on a bunch of essential
