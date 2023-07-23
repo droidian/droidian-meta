@@ -145,6 +145,8 @@ Depends: ${misc:Depends},
          firefox-esr-mobile-config,
          clapper,
          droidian-quirks-totem-dummy,
+         g4music,
+         droidian-quirks-lollypop-dummy,
 Breaks: droidian-full (<< 22+git20211206000000)
 Replaces: droidian-full (<< 22+git20211206000000)
 Description: Droidian metapackages - full phosh environment
