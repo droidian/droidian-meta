@@ -61,6 +61,8 @@ Depends: ${misc:Depends},
          libgbinder-tools,
          cups,
          droidian-fpd,
+         droidian-fpd-client,
+         dialog,
 Conflicts: droidian-upgrade-trixie
 Description: Droidian metapackages - base
  This metapackage depends on a bunch of essential
