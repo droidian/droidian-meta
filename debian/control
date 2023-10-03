@@ -177,6 +177,17 @@ Description: Droidian metapackages - devtools
  This metapackage depends on a bunch of packages that
  aid development.
 
+Package: droidian-extras
+Architecture: all
+Depends: ${misc:Depends},
+         webext-ublock-origin-firefox,
+         qgnomeplatform-qt5,
+         fonts-crosextra-caladea,
+         fonts-crosextra-carlito
+Description: Droidian metapackages - extras
+ This metapackage depends on a bunch of packages that
+ improve user experience
+
 Package: droidian-minimal
 Architecture: all
 Depends: droidian-phosh-minimal
