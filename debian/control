@@ -184,7 +184,13 @@ Depends: ${misc:Depends},
          webext-ublock-origin-firefox,
          qgnomeplatform-qt5,
          fonts-crosextra-caladea,
-         fonts-crosextra-carlito
+         fonts-crosextra-carlito,
+         network-manager-openvpn-gnome,
+         network-manager-fortisslvpn-gnome,
+         network-manager-l2tp-gnome,
+         network-manager-pptp-gnome,
+         network-manager-sstp,
+         network-manager-vpnc-gnome,
 Description: Droidian metapackages - extras
  This metapackage depends on a bunch of packages that
  improve user experience
