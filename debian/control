@@ -192,6 +192,8 @@ Depends: ${misc:Depends},
          network-manager-sstp,
          network-manager-vpnc-gnome,
          eog-plugins,
+         adwaita-qt,
+         adwaita-qt6,
 Description: Droidian metapackages - extras
  This metapackage depends on a bunch of packages that
  improve user experience
