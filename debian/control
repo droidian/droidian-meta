@@ -191,6 +191,7 @@ Depends: ${misc:Depends},
          network-manager-pptp-gnome,
          network-manager-sstp,
          network-manager-vpnc-gnome,
+         eog-plugins,
 Description: Droidian metapackages - extras
  This metapackage depends on a bunch of packages that
  improve user experience
