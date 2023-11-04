@@ -181,6 +181,7 @@ Depends: ${misc:Depends},
          psmisc,
          psutils,
          inxi,
+         dbus-x11,
 Description: Droidian metapackages - devtools
  This metapackage depends on a bunch of packages that
  aid development.
