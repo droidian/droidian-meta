@@ -202,6 +202,7 @@ Depends: ${misc:Depends},
          eog-plugins,
          adwaita-qt,
          adwaita-qt6,
+         chromium-sandbox,
 Description: Droidian metapackages - extras
  This metapackage depends on a bunch of packages that
  improve user experience
