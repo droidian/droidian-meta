@@ -204,6 +204,8 @@ Depends: ${misc:Depends},
          adwaita-qt,
          adwaita-qt6,
          chromium-sandbox,
+         libtcl8.6,
+         libtk8.6,
 Description: Droidian metapackages - extras
  This metapackage depends on a bunch of packages that
  improve user experience
