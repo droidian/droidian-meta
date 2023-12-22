@@ -206,6 +206,7 @@ Depends: ${misc:Depends},
          chromium-sandbox,
          libtcl8.6,
          libtk8.6,
+         qt6-gtk-platformtheme,
 Description: Droidian metapackages - extras
  This metapackage depends on a bunch of packages that
  improve user experience
