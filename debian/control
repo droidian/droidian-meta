@@ -48,7 +48,7 @@ Depends: ${misc:Depends},
          callaudiod,
          runonce,
          systemd-resolved,
-         droidian-quirks-brightness,
+#         droidian-quirks-brightness,
          droidian-quirks-hostname,
          droidian-quirks-waydroid,
          droidian-quirks-systemd,
@@ -207,6 +207,7 @@ Depends: ${misc:Depends},
          libtcl8.6,
          libtk8.6,
          qt6-gtk-platformtheme,
+         qt6-wayland
 Description: Droidian metapackages - extras
  This metapackage depends on a bunch of packages that
  improve user experience
