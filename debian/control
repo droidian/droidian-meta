@@ -146,7 +146,6 @@ Depends: ${misc:Depends},
          epiphany-browser,
          eog,
          gthd,
-         qtwayland5,
          firefox-esr,
          firefox-esr-mobile-config,
          droidian-quirks-firefox,
@@ -207,7 +206,8 @@ Depends: ${misc:Depends},
          libtcl8.6,
          libtk8.6,
          qt6-gtk-platformtheme,
-         qt6-wayland
+         qt6-wayland,
+         qtwayland5,
 Description: Droidian metapackages - extras
  This metapackage depends on a bunch of packages that
  improve user experience
