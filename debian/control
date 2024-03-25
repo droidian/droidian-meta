@@ -67,6 +67,8 @@ Depends: ${misc:Depends},
          droidian-fpd-client,
          dialog,
          mtp-server,
+         plymouth,
+         plymouth-theme-droidian,
 Conflicts: droidian-upgrade-trixie
 Description: Droidian metapackages - base
  This metapackage depends on a bunch of essential
@@ -90,8 +92,6 @@ Depends: ${misc:Depends},
          xdg-desktop-portal-gtk,
          xdg-desktop-portal-gnome,
          libcanberra-gtk3-module,
-         plymouth,
-         plymouth-theme-droidian,
          phosh-core,
          gnome-accessibility-themes,
          gnome-initial-setup,
