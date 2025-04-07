@@ -153,7 +153,7 @@ Depends: ${misc:Depends},
          gnome-calendar,
          gnome-contacts,
          mobile-broadband-provider-info,
-         device-chassis-handset,
+         device-chassis-handset | device-chassis,
 Breaks: droidian-phone (<< 22+git20211206000000)
 Replaces: droidian-phone (<< 22+git20211206000000)
 Description: Droidian metapackages - addons for mobile phones
