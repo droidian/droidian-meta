@@ -308,6 +308,7 @@ Depends: ${misc:Depends},
          qt6-gtk-platformtheme,
          qt6-wayland,
          qtwayland5,
+         xwayland,
 Description: Droidian metapackages - extras
  This metapackage depends on a bunch of packages that
  improve user experience
