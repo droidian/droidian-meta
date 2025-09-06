@@ -72,6 +72,7 @@ Depends: ${misc:Depends},
          flatpak,
          plymouth,
          plymouth-theme-droidian,
+         headphone-manager,
 Conflicts: droidian-upgrade-trixie
 Description: Droidian metapackages - base
  This metapackage depends on a bunch of essential
